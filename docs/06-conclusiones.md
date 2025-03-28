@@ -1,0 +1,9 @@
+# Conclusiones
+
+Se logró desarrollar e implementar un clúster local en Kubernetes, analizando su comportamiento y escalabilidad bajo distintas condiciones de tráfico. A partir de los conceptos teóricos de redes de colas y tomando como referencia el paper base, se interpretó el funcionamiento de los principales componentes del proyecto, como el balanceador de carga, los nodos y los contenedores, dentro del entorno de Kubernetes.
+
+Si bien el modelo implementado no replica exactamente el del paper de referencia, en la práctica el encolamiento se llevó a cabo en el servidor Uvicorn dentro de cada pod, funcionando individualmente como un modelo M/M/1. Mientras tanto, el Ingress y los nodos se limitaron a redirigir las solicitudes a los pods siguiendo la política de distribución Round-Robin establecida.
+
+Los resultados obtenidos muestran que el comportamiento del sistema sigue las ecuaciones teóricas del tráfico en colas, alcanzando valores similares a los esperados en las pruebas realizadas. En cuanto al desempeño del clúster bajo pruebas de carga, se observó un aumento en la carga del sistema al incrementar la tasa de arribo con una cantidad fija de servidores. Asimismo, los tiempos de respuesta se mantuvieron estables mientras la utilización del CPU en el clúster fue inferior al 100%. Sin embargo, al superar este umbral, la latencia se incrementó significativamente y el sistema se volvió inestable. Por otro lado, se verificó que aumentar la cantidad de pods permitió estabilizar los tiempos de respuesta para una misma tasa de arribo.
+
+A través de simulaciones prácticas y modelado matemático, se comprobó que el sistema puede adaptarse eficientemente a variaciones en la carga mediante el uso de un Horizontal Pod Autoscaler (HPA). Esta estrategia permitió una respuesta dinámica ante fluctuaciones en la demanda, optimizando el uso de los recursos y asegurando una calidad de servicio adecuada.
