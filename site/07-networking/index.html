@@ -14,6 +14,8 @@
         <link rel="prev" href="../06-conclusiones/">
       
       
+        <link rel="next" href="../coding/implementacion_yml/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
@@ -215,24 +217,6 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../coding/implementacion_yml/" class="md-tabs__link">
-          
-  
-  Code Docs
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
     <li class="md-tabs__item">
       <a href="../01-introduccion_objs/" class="md-tabs__link">
         
@@ -350,6 +334,24 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../coding/implementacion_yml/" class="md-tabs__link">
+          
+  
+  Code Docs
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -408,122 +410,6 @@
   
 
       </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Code Docs
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Code Docs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coding/implementacion_yml/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    yaml
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coding/implementacion_py/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    python
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coding/implementacion_bash/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    bash
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -683,6 +569,122 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Code Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Code Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coding/implementacion_yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    yaml
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coding/implementacion_py/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coding/implementacion_bash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -707,7 +709,7 @@ Los servicios de tipo ClusterIP generan una IP  virtual interna que permite que 
 <p>En cuanto al recurso Ingress con el controlador NGINX, este se despliega en uno o varios pods y expone por los puertos 80 y 443 una entrada para el tráfico externo. Por medio de reglas basadas en host y path, el ingress redirige el tráfico a los Services correspondientes dentro del cluster.</p>
 <p>Mientras que Minikube generalmente se ejecuta en una máquina virtual ( o en un contenedor, dependiendo del driver usado), tiene su propia red interna la cual conecta el cluster (nodos, pods, ingress, etc). Pero no se puede acceder directamente de manera externa a la red del cluster.</p>
 <p>Para poder acceder externamente, se utilizo la  herramienta socat ejecutandose en la PC anfitriona para exponer el cluster al exterior.
-Lo que socat hace es redirigir el tráfico que llega externamente al puerto de la PC anfitrion, y de allí lo envía al puerto de entrada del cluster que corresponde al del ingress en este caso. Permitiendo de este modo, por mas de que PODs y servicios tengan IPs internas, canalizar el trafico externo hacia el cluster y poder llegar a la API corriendo en los endpoints.</p>
+Lo que socat hace es redirigir el tráfico que llega externamente al puerto de la PC anfitrion, y de allí lo envía al puerto de entrada del cluster que corresponde al del ingress en este caso. Permitiendo de este modo, por mas de que PODs y servicios tengan IPs internas, canalizar el trafico externo hacia el cluster y poder llegar a la API corriendo en los pods.</p>
 <hr />
 <p>&nbsp;</p>
 <p>Solicitud:</p>

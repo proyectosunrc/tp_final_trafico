@@ -8,7 +8,7 @@ En cuanto al recurso Ingress con el controlador NGINX, este se despliega en uno 
 Mientras que Minikube generalmente se ejecuta en una máquina virtual ( o en un contenedor, dependiendo del driver usado), tiene su propia red interna la cual conecta el cluster (nodos, pods, ingress, etc). Pero no se puede acceder directamente de manera externa a la red del cluster.
 
 Para poder acceder externamente, se utilizo la  herramienta socat ejecutandose en la PC anfitriona para exponer el cluster al exterior.
-Lo que socat hace es redirigir el tráfico que llega externamente al puerto de la PC anfitrion, y de allí lo envía al puerto de entrada del cluster que corresponde al del ingress en este caso. Permitiendo de este modo, por mas de que PODs y servicios tengan IPs internas, canalizar el trafico externo hacia el cluster y poder llegar a la API corriendo en los endpoints.
+Lo que socat hace es redirigir el tráfico que llega externamente al puerto de la PC anfitrion, y de allí lo envía al puerto de entrada del cluster que corresponde al del ingress en este caso. Permitiendo de este modo, por mas de que PODs y servicios tengan IPs internas, canalizar el trafico externo hacia el cluster y poder llegar a la API corriendo en los pods.
 ***
 
 &nbsp;
