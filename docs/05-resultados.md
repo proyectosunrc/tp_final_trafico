@@ -67,7 +67,7 @@ Al aumentar la tasa de arribo λ, el sistema tiende a saturarse, lo que provoca 
 
 &nbsp;
 
-## **Respuesta del sistema en funcion de la cantidad de servidores en ejecucion para un lambda=15 1/s y mu=10 1/s**
+## *Respuesta del sistema en funcion de la cantidad de servidores en ejecucion para un lambda=15 1/s y mu=10 1/s*
 
 ![Modelo](img/Tiempo_Respuesta_vs_Pods.png)
 

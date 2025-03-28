@@ -199,7 +199,7 @@ plt.show()
 
 ```
 
-## Número de perdidas en funcion de la tasa de arrivo
+## Número de perdidas en funcion de la tasa de arribo
 
 ```python
 import numpy as np
@@ -248,7 +248,7 @@ plt.show()
 
 ```
 
-## Numero de tareas en funcion de la tasa de arrivo
+## Numero de tareas en funcion de la tasa de arribo
 
 ```python
 import numpy as np
