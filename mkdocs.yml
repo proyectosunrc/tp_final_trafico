@@ -46,10 +46,6 @@ extra:
 
 nav:
   - Home: index.md
-  - Code Docs:
-      - yaml: coding/implementacion_yml.md
-      - python: coding/implementacion_py.md
-      - bash: coding/implementacion_bash.md
   - Introduccion y Objetivos: 01-introduccion_objs.md
   - Marco Teorico: 02-marco_teorico.md
   - Desarrollo: 03-desarrollo.md
@@ -57,6 +53,10 @@ nav:
   - Resultados: 05-resultados.md
   - Conclusiones: 06-conclusiones.md
   - Networking: 07-networking.md
+  - Code Docs:
+      - yaml: coding/implementacion_yml.md
+      - python: coding/implementacion_py.md
+      - bash: coding/implementacion_bash.md
 
 markdown_extensions:
   - pymdownx.highlight:

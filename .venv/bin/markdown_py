@@ -1,0 +1,8 @@
+#!/home/ramiro/Documentos/Trabajo_Final_Trafico_2024/doc_project/tp_final_trafico/.venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from markdown.__main__ import run
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(run())
