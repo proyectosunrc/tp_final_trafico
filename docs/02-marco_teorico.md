@@ -23,13 +23,7 @@ Las instancias de contenedor comparten el kernel. El sistema operativo con otros
 
 ### Ventajas de la contenedorizacion respecto al uso de maquinas virtuales
 
-  * Facilita el despliegue rapido de aplicaciones  entre diferentes arquitecturas en la nube a diferencia de las VMs.
-  * Operan sobre un mismo kernel pero con aislamiento de recursos comparable a las VMs, pero con **menor sobrecarga administrativa y mayor eficiencia en los tiempos de ejecución.** 
-  * Eficiencia respecto a las VMs al consumir menos recursos.
-  * Rapido inicio al alctivarse o detenerse en cuestion de segundos, lo cual brinda mayor agilidad.
-  * Garantiza la portabilidad y el despliegue en cualquier entorno, sin conflictos con dependencias.
-  * Mas adaptables en entornos dinámicos donde hay cargas de trabajo variables y la escalabilidad es bajo demanda.
-  * Movilidad en la nube
+Los contenedores facilitan el despliegue rápido de aplicaciones entre diferentes arquitecturas en la nube, a diferencia de las máquinas virtuales (VMs). Operan sobre un mismo kernel, pero con un aislamiento de recursos comparable al de las VMs, ofreciendo menor sobrecarga administrativa y mayor eficiencia en tiempos de ejecución. Son más eficientes en el consumo de recursos en comparación con las VMs y permiten un inicio o detención en cuestión de segundos, brindando mayor agilidad. Además, garantizan la portabilidad y el despliegue en cualquier entorno sin conflictos de dependencias. Su adaptabilidad los hace ideales para entornos dinámicos con cargas de trabajo variables y escalabilidad bajo demanda, permitiendo una mayor movilidad en la nube.
 
 ### Limitaciones frente a las VMs
    * Poseen un menor aislamiento que las MVs, al estar menos aisladas no son tan seguras para aplicaciones críticas.
