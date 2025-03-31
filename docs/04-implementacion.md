@@ -154,10 +154,8 @@ internos del clúster basándose en criterios como la URL, el host, o el puerto.
 
 ## Uso del comando socat
 
-Se utilizo la herramienta "socat" para que la PC anfitriona física pueda redirigir el
-tráfico de solicitudes al puerto despecificado como NodePort en el ingress del cluster. Esto se debe hacer ya que el cluster está
-aislado dentro de la PC anfitriona y nadie desde fuera puede llegar de forma directa. El
-comando que se utiliza es el siguiente:
+Se utilizó la herramienta "socat" para permitir que la PC anfitriona física redirija el tráfico de solicitudes hacia el puerto especificado como NodePort en el Ingress del clúster. Esto es necesario debido a que el clúster está aislado dentro de la PC anfitriona, lo que impide el acceso directo desde el exterior. El
+comando es el siguiente:
 
 ```bash
 #Para ver el puerto del ingress

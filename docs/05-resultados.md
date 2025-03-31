@@ -81,6 +81,8 @@ Al aumentar la tasa de arribo λ, el sistema tiende a saturarse, lo que provoca 
 
 ![Modelo](img/curvas_respuesta_carga.png)
 
+Se observa que a medida que se incrementan la cantidad de servidores disponibles, la curva de tiempo de respuesta en el sistema es menor.
+
 ## Uso del Horizontal Pod Autoescaler
 
 ### Caso 1: 1 Pod, λ=30
