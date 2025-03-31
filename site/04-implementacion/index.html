@@ -1056,10 +1056,8 @@ internos del clúster basándose en criterios como la URL, el host, o el puerto.
 </ul>
 <p><a href="../coding/implementacion_yml/"><em>Enlace a Scripts</em></a></p>
 <h2 id="uso-del-comando-socat">Uso del comando socat</h2>
-<p>Se utilizo la herramienta "socat" para que la PC anfitriona física pueda redirigir el
-tráfico de solicitudes al puerto despecificado como NodePort en el ingress del cluster. Esto se debe hacer ya que el cluster está
-aislado dentro de la PC anfitriona y nadie desde fuera puede llegar de forma directa. El
-comando que se utiliza es el siguiente:</p>
+<p>Se utilizó la herramienta "socat" para permitir que la PC anfitriona física redirija el tráfico de solicitudes hacia el puerto especificado como NodePort en el Ingress del clúster. Esto es necesario debido a que el clúster está aislado dentro de la PC anfitriona, lo que impide el acceso directo desde el exterior. El
+comando es el siguiente:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">#Para ver el puerto del ingress</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>kubectl<span class="w"> </span>get<span class="w"> </span>svc<span class="w"> </span>-A
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
