@@ -1,4 +1,4 @@
-# Proyecto: Escalabilidad Dinámica en Servicios Cloud
+# Proyecto: Escalabilidad Dinámica de servicios en la nube
 
 ## Introducción
 En el ámbito del cloud computing, la gestión eficiente de recursos, la escalabilidad dinámica y la optimización del rendimiento en entornos basados en contenedores representan desafíos críticos que demandan soluciones teórico-prácticas innovadoras. Este proyecto integra conceptos de teoría de colas, orquestación de contenedores y programación moderna para evaluar y desplegar un modelo de escalabilidad dinámica en servicios cloud. Combina fundamentos de teoría de colas, como el análisis de sistemas bajo procesos de Poisson y distribuciones exponenciales, con tecnologías como Kubernetes, Docker y FastAPI, ofreciendo un enfoque completo para la gestión de tráfico y recursos en entornos virtualizados.
