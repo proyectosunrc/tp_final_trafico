@@ -1,14 +1,11 @@
 
-En la PC anfitrion donde se aloja el cluster, se tienen varios niveles que interactuan para dirigir el trafico interno y externo del cluster.
-La *red interna y el POD Networking*, donde cada pod creado se le configura una IP privada definida por el plugin de red (por jemplo, 10.244.0.0/16). A estas IPs se puede acceder solamente desde dentro del cluster.
-Los servicios de tipo ClusterIP generan una IP  virtual interna que permite que los pods se comuniquen entre sí y se distribuya la carga. Este Service no es accesible directamente desde el exterior.
+En la PC anfitriona donde se aloja el clúster, varios niveles de red gestionan el tráfico interno y externo. Dentro del clúster, los pods obtienen direcciones IP privadas asignadas por el plugin de red (por ejemplo, 10.244.0.0/16), accesibles solo desde dentro del clúster. Los servicios de tipo ClusterIP crean IPs virtuales internas para permitir la comunicación entre pods y la distribución de carga, pero no son accesibles desde el exterior.
 
-En cuanto al recurso Ingress con el controlador NGINX, este se despliega en uno o varios pods y expone por los puertos 80 y 443 una entrada para el tráfico externo. Por medio de reglas basadas en host y path, el ingress redirige el tráfico a los Services correspondientes dentro del cluster.
+El recurso Ingress, con el controlador NGINX, se despliega en uno o varios pods y expone los puertos 80 y 443 para recibir tráfico externo. A través de reglas basadas en host y path, redirige las solicitudes a los servicios internos correspondientes.
 
-Mientras que Minikube generalmente se ejecuta en una máquina virtual ( o en un contenedor, dependiendo del driver usado), tiene su propia red interna la cual conecta el cluster (nodos, pods, ingress, etc). Pero no se puede acceder directamente de manera externa a la red del cluster.
+Minikube, que generalmente se ejecuta en una máquina virtual o contenedor según el driver utilizado, cuenta con su propia red interna para conectar nodos, pods e ingress. Sin embargo, esta red no es accesible directamente desde el exterior.
 
-Para poder acceder externamente, se utilizo la  herramienta socat ejecutandose en la PC anfitriona para exponer el cluster al exterior.
-Lo que socat hace es redirigir el tráfico que llega externamente al puerto de la PC anfitrion, y de allí lo envía al puerto de entrada del cluster que corresponde al del ingress en este caso. Permitiendo de este modo, por mas de que PODs y servicios tengan IPs internas, canalizar el trafico externo hacia el cluster y poder llegar a la API corriendo en los pods.
+Para solucionar esto, se utilizó la herramienta socat en la PC anfitriona, redirigiendo el tráfico externo desde un puerto local hacia el puerto correspondiente del ingress dentro del clúster. Esto permite canalizar el tráfico externo hacia los pods, incluso cuando estos y sus servicios operan con IPs internas.
 ***
 
 &nbsp;
